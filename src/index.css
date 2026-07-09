@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-bg-dark: #0d1a14;
+  --color-bg-darker: #081008;
+  --color-bg-card: #142a1f;
+  --color-bg-card-2: #17301f;
+  --color-gold: #d4af5a;
+  --color-gold-bright: #f0cf7d;
+  --color-gold-deep: #a9812e;
+  --color-moss: #4a5c38;
+  --color-brand-deep: #0d1a14;
+  --color-brand-green: #142a1f;
+  --color-brand-gold: #d4af5a;
+  --color-brand-muted: #93a596;
+  --color-brand-border: rgba(212,175,90,0.18);
+  --color-line-dark: rgba(212,175,90,0.18);
+  --color-line-light: rgba(13,26,20,0.1);
+  --color-red: #cf4a4a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0d1a14;
+    color: #eef0e9;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-brand-gold {
+    color: var(--color-brand-gold);
+  }
+  .bg-brand-gold {
+    background-color: var(--color-brand-gold);
+  }
+  .border-theme {
+    border-color: var(--color-brand-border);
+  }
+  .display {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+  .mono {
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
